@@ -1,8 +1,10 @@
 import data from "../data.json";
+import { motion } from "framer-motion";
 
 type Expense = {
   day: string;
   amount: number;
+  height: number;
 };
 
 function App() {
@@ -25,7 +27,14 @@ function App() {
                 className="flex flex-col-reverse gap-2 text-center "
               >
                 <span>{item.day}</span>
-                <li className="flex flex-col-reverse items-center h-24 rounded-md bg-soft"></li>
+                <motion.li
+                  layout
+                  animate={{ height: [0, item.height] }}
+                  transition={{
+                    duration: 0.3,
+                  }}
+                  className="flex flex-col-reverse items-center rounded-md bg-soft"
+                ></motion.li>
               </div>
             ))}
           </ul>
