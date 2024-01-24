@@ -1,6 +1,6 @@
 import data from "../data.json";
 import { motion } from "framer-motion";
-
+import logo from "./assets/logo.svg";
 type Expense = {
   day: string;
   amount: number;
@@ -16,7 +16,7 @@ function App() {
             <p className="text-xs ">My balance</p>
             <p className="text-2xl">$921.48</p>
           </div>
-          <img src="/logo.svg" width="50px" height="50px" alt="" />
+          <img src={logo} width="50px" height="50px" alt="" />
         </div>
         <div className="px-6 py-6 space-y-8 bg-white rounded-lg w-96">
           <div className="text-2xl text-darkBrown">Spending - Last 7 days</div>
@@ -31,7 +31,7 @@ function App() {
                   layout
                   animate={{ height: [0, item.height] }}
                   transition={{
-                    duration: 0.3,
+                    duration: 0.8,
                   }}
                   className="flex flex-col-reverse items-center rounded-md bg-soft"
                 ></motion.li>
