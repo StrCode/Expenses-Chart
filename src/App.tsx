@@ -16,7 +16,7 @@ function App() {
             <p className="text-xs ">My balance</p>
             <p className="text-2xl">$921.48</p>
           </div>
-          <img src={logo} width="50px" height="50px" alt="" />
+          <img src={logo} width="50" height="50" alt="" />
         </div>
         <div className="px-6 py-6 space-y-8 bg-white rounded-lg w-[500px] ">
           <div className="text-2xl text-darkBrown">Spending - Last 7 days</div>
