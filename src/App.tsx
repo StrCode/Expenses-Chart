@@ -11,14 +11,14 @@ function App() {
   return (
     <>
       <div className="flex flex-col items-center justify-center min-h-screen space-y-5 bg-mediumBrown">
-        <div className="flex justify-between px-6 py-4 bg-soft w-[500px] text-cream rounded-xl">
+        <div className="flex justify-between px-6 py-4 bg-soft w-96 text-cream rounded-xl">
           <div className="flex flex-col">
             <p className="text-xs ">My balance</p>
             <p className="text-2xl">$921.48</p>
           </div>
           <img src={logo} width="50" height="50" alt="" />
         </div>
-        <div className="px-6 py-6 space-y-8 bg-white rounded-lg w-[500px] ">
+        <div className="px-6 py-6 space-y-8 bg-white rounded-lg w-96 ">
           <div className="text-2xl text-darkBrown">Spending - Last 7 days</div>
           <ul className="grid grid-cols-7 gap-3 text-[10px] min-h-36 text-mediumBrown ">
             {data.map((item: Expense) => (
